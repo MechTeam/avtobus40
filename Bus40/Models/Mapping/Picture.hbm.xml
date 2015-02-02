@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Bus40" namespace="Bus40.Models.Domain.Entities">
+  <class name="Picture" table="Picture">
+    <id name="Id">
+      <column name="Id"></column>
+      <generator class="guid"></generator>
+    </id>
+    <property name="Name"/>
+    <property name="Path"/>
+  </class>
+</hibernate-mapping>
