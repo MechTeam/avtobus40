@@ -1,61 +1,74 @@
 ﻿body {
     font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+    font-family: "Segoe UI";
+    width: 1100px;    
+    margin: 0 auto;    
 }
 
-header, footer, nav, section {
+#header {
+    border: solid;
+}
+
+#main {
+    border: solid;    
+    height: auto;
+    margin: 10px 0px 10px 0px;    
+    min-height: 550px;
+}
+
+#footer {
+    
+    border: solid;
+    bottom: 0;    
+    height: 60px;
+    
+}
+
+#navigation {
+    margin: 10px 0px 10px 0px;
+    border: solid;
+}
+
+.mainMenu {
+    height: 40px;
+}
+
+.mainMenu li {    
+	list-style: none;
+	width: 200px;	
+    height: 50px;   
+    float: left;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana;
+    background: red;
     display: block;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
 }
 
-
-/* Styles for basic forms
------------------------------------------------------------*/
-fieldset {
-    border: 1px solid #ddd;
-    padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
+.serviceTicket {
+    border: solid;
+    height: 200px;
+    width: 475px;
+    display: block;
+    margin: 33px;
+    float: left;
 }
 
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
+#mainHeader {
+    border: solid;    
+    height: 130px;
+    margin: 10px 0px 10px 0px;
 }
 
-textarea {
-    min-height: 75px;
-}
-
-.editor-label {
-    margin: 1em 0 0 0;
-}
-
-.editor-field {
-    margin: 0.5em 0 0 0;
-}
+/*float
+display
+position*/
 
 
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error {
-    color: #f00;
-}
 
-.field-validation-valid {
-    display: none;
-}
-
-.input-validation-error {
-    border: 1px solid #f00;
-    background-color: #fee;
-}
-
-.validation-summary-errors {
-    font-weight: bold;
-    color: #f00;
-}
-
-.validation-summary-valid {
-    display: none;
-}

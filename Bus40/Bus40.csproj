@@ -130,6 +130,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BlockController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +150,7 @@
     <Compile Include="Models\Domain\Providers\VacancyProvider.cs" />
     <Compile Include="Models\Domain\Providers\IProvider.cs" />
     <Compile Include="Models\Domain\Providers\NHibernateHelper.cs" />
+    <Compile Include="Models\WebTemplateObjects\ServiceWTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +235,12 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Block\Footer.ascx" />
+    <Content Include="Views\Block\Header.ascx" />
+    <Content Include="Views\Home\Navigation.ascx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\Service.ascx" />
+    <Content Include="Views\Home\Slider.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -241,10 +250,10 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Master.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
